@@ -1,0 +1,30 @@
+.banner {
+  background: url("../../images/paper.png"), white;
+  border: 2px solid black;
+  margin: 3%;
+  padding: 2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container{
+    display: grid;
+    grid-template-columns: 65% auto 30%;
+    grid-column-gap: 2.5%;
+    column-gap: 2.5%;
+  }
+
+  .left-panel, .right-panel {
+    background-color: $light-pink;
+  }
+
+  .leftPanel-info, .right-panel {
+    padding: 1.75em;
+  }
+}
+
+.rule{
+  background: black;
+  width: 1px;
+  height: 100%;
+  margin: auto;
+}

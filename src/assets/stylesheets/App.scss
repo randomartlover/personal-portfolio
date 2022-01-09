@@ -1,0 +1,9 @@
+//CSS partials
+@import "config/colors";
+@import "config/fonts";
+@import "components/index";
+
+body {
+  background-color: $light-pink;
+  font-size: 16px;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=PT+Sans&family=Playfair+Display:ital@1&family=Sigmar+One&display=swap');
+
+//font families
+$amatic-font: 'Amatic SC', cursive;
+$playfair-font: 'Playfair Display', serif;
+$pt-sans: 'PT Sans', sans-serif;
+$sigmar-one: 'Sigmar One', cursive;
+
+//font sizes
+$large-font-size: 3em;
+$medium-font-size: 2em;
+$small-font-size: 1.75em;
+$p-font-size: 1.25em;
+
+p {
+  font-family: $pt-sans;
+  font-size: $p-font-size;
+}
+
+h2 {
+  font-family: $medium-font-size;
+}
+
+h3 {
+  font-size: $small-font-size;
+  font-family: $amatic-font;
+}

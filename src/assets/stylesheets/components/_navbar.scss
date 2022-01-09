@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 14vw;
+  align-items: center;
+
+  .navbar-img-container {
+    height: 18vw;
+    margin-top: 20px;
+  }
+
+  em {
+    display: block;
+  }
+
+  select {
+    margin-top: 0.75em;
+    font-style: italic;
+    font-weight: 600;
+    // font-size: 1.5vw;
+    background-color: $light-pink;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+    padding: 2px 0;
+  }
+
+  p {
+    font-family: $amatic-font;
+    // font-size: 2vw;
+    font-weight: 600;
+  }
+}
