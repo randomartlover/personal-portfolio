@@ -2,8 +2,33 @@
 @import "config/colors";
 @import "config/fonts";
 @import "components/index";
+@import "pages/index";
 
 body {
   background-color: $light-pink;
   font-size: 16px;
+}
+
+// 320px — 480px: Mobile devices.
+// 481px — 768px: iPads, Tablets.
+// 769px — 1024px: Small screens, laptops.
+// 1025px — 1200px: Desktops, large screens.
+// 1201px and more — Extra large screens, TV.
+
+// 769px — 1024px: Small screens, laptops.
+@media screen and (max-width: 1024px){
+  body { font-size: 14px;
+  }
+}
+
+// 481px — 768px: iPads, Tablets.
+@media screen and (max-width: 768px){
+  body { font-size: 8px;
+  }
+}
+
+// Up to 480px: Mobile devices.
+@media screen and (max-width: 480px){
+  body { font-size: 6px;
+  }
 }

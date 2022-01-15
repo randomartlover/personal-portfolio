@@ -1,0 +1,24 @@
+.television-container {
+  position: relative;
+  width: 50%;
+
+    .img-container {
+      height: 57.5%;
+      top: 18.25%;
+      display: flex;
+      position: absolute;
+      left: 10.5%;
+    }
+
+    .img-container img {
+      width: 85%;
+      object-fit: fill;
+      filter: brightness(.9)
+    }
+
+    img:nth-child(2) {
+      width: 100%;
+      position: relative;
+      z-index: 2;
+    }
+}
