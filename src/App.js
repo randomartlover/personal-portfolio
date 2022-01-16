@@ -1,19 +1,39 @@
 import './assets/stylesheets/App.scss';
-import Banner from './components/Banner';
-import Navbar from './components/Navbar';
 import Homepage from './pages/Homepage';
 import AboutMe from './pages/AboutMe';
+import Projects from './pages/Projects';
+import { Route, Switch } from 'react-router-dom';
+import {
+  CSSTransition,
+  TransitionGroup,
+} from 'react-transition-group';
 
 function App() {
   return (
     <div className="App">
-      <Banner>
-        <Navbar />
-        <div className='container'>
-          <Homepage />
-          <AboutMe />
-        </div>
-      </Banner>
+      <Route render={({location})=> (
+        <TransitionGroup>
+            <CSSTransition
+              key={location.key}
+              timeout={30000}
+              appear
+              in
+              classNames="page-transition"
+            >
+              <Switch>
+                <Route exact path="/" component={Homepage} />
+                <Route path="/about" component={AboutMe} />
+                <Route path="/projects" component={Projects} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+        )} />
+            {/* <Router render={({ location }) => (
+            <Switch>
+              <Route exact path="/" component={Homepage} />
+              <Route path="/about" component={AboutMe} />
+            </Switch>
+          )} /> */}
     </div>
   );
 }

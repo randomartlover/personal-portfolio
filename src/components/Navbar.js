@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import moment from 'moment';
 import navBarBanner from '../assets/images/navbar-header.png';
 
@@ -13,11 +15,9 @@ function Navbar() {
         {moment().format('Do MMMM, YYYY')}
         <em>
           Page: &nbsp;
-          <select name="page">
-            <option value="Home">Home</option>
-            <option value="About Me">About Me</option>
-            <option value="Projects">Projects</option>
-          </select>
+            <Link to="/">Home </Link>
+            <Link to="/about">About-Me </Link>
+            <Link to="/projects">Projects</Link>
         </em>
       </p>
     </div>

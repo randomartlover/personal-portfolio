@@ -1,7 +1,8 @@
 .banner {
   background: url("../../images/paper.png"), white;
   border: 2px solid black;
-  margin: 4vw ;
+  width: 80%;
+  margin: 7% auto;
   padding: 2%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,6 +13,12 @@
     grid-column-gap: 2.5%;
     column-gap: 2.5%;
     min-height: 80vh;
+  }
+
+  .page {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 
   .left-panel, .right-panel {
