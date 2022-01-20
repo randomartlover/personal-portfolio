@@ -3,8 +3,8 @@ import React from 'react';
 function Card(props) {
   const { children, reverse = false } = props;
   return (
-    <div className={reverse ? 'card reverse' : 'card'}>
-      {children}
+    <div className={ reverse ? 'card reverse' : 'card' }>
+      { children }
     </div>
   );
 }

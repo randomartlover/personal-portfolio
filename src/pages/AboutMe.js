@@ -149,7 +149,7 @@ function AboutMe() {
               <ul className='skills-grid'>
                 {
                   SKILLS.map(skill => {
-                    return <li>{ skill }</li>
+                    return <li key={ skill }>{ skill }</li>
                   })
                 }
               </ul>

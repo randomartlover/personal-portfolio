@@ -1,0 +1,10 @@
+.projects {
+  .card {
+    margin-bottom: 5em;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

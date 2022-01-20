@@ -1,8 +1,7 @@
 .card {
   display: flex;
-  height: 25vw;
   background-color: $light-red-pink;
-  margin: 20px 0;
+  padding: 1em;
 
   &.reverse {
     flex-direction: row-reverse;
@@ -10,11 +9,11 @@
 
   div {
     padding: 3% 3% 0 3%;
+    flex-grow: 1;
   }
 
   img {
     width: 45%;
     object-fit: contain;
-    background-color: $dark-pink;
   }
 }
