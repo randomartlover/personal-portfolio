@@ -1,0 +1,12 @@
+.underline-full, .underline-fit {
+  border-bottom: 1px dashed $gray;
+}
+
+.underline-full {
+  padding: 0.25em;
+}
+
+.underline-fit {
+  width: fit-content;
+  padding: 0 0.25em;
+}

@@ -9,11 +9,28 @@
 
   h3 {
     font-family: $sigmar-one;
-    font-size: 1em;
+    font-size: 1.15em;
     margin: 0.5em 0 0 0;
+    font-weight: 300;
   }
 
   p {
     margin: 0;
+  }
+
+  ul {
+    padding: 0 1em;
+    margin: 0.25em 0;
+    list-style-type: square;
+  }
+
+  li {
+    margin: 0.25em 0;
+  }
+
+  .skills-grid {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr;
   }
 }

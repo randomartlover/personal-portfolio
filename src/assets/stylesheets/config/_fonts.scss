@@ -12,8 +12,12 @@ $medium-font-size: 2em;
 $small-font-size: 1.75em;
 $p-font-size: 1em;
 
-p {
+p, li {
   font-family: $pt-sans;
+}
+
+h1 {
+  font-family: $sigmar-one;
 }
 
 h2 {
