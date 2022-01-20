@@ -52,9 +52,12 @@ function Projects() {
       <Navbar />
       <div className="banner-container projects">
         <LeftPanel>
-          <h1 className="container">
-            Showroom
-          </h1>
+          <div className="container">
+            <h1>
+              The Showroom
+            </h1>
+            <p>Below are works and collborations done by artist Alexandra Okoro</p>
+          </div>
           {
             PROJECTS.map((project, index) => {
               const { projectName, description, source } = project;

@@ -6,7 +6,6 @@ import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import televison from '../assets/images/retro-television.png';
 import funnyGif from '../assets/images/IT-gif.gif';
-import mapToDreams from '../assets/images/map-to-dreams.svg';
 import gameOnCover from '../assets/images/projects/gameOn/game-on-cover.png';
 import Footer from '../components/Footer';
 import FullWidthImage from '../components/FullWidthImage';
@@ -39,7 +38,6 @@ function HomePage() {
               <h3>Passionate about adventures</h3>
               <p>So much to see...so little time...</p>
             </div>
-            <img src={mapToDreams} alt="map" width="40%"/>
           </div>
           <div className="container">
             <h2 className='underline-fit'>WHAT TO EXPECT</h2>
