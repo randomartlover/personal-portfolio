@@ -1,9 +1,15 @@
 .avatar-container {
   text-align: center;
-  width: 65%;
-  margin: auto;
+  width: 50%;
+  margin: 0.5em auto;
+  transition: transform 0.5s;
+
 
   img {
     border-radius: 50%;
   }
+}
+
+.avatar-container:hover {
+  transform: rotate(40deg);
 }

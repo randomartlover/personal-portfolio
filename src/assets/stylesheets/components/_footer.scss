@@ -1,0 +1,22 @@
+footer {
+  font-family: $amatic-font;
+  margin-top: 1.5em;
+  font-weight: 600;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  h3 {
+    font-size: 1.5em;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    padding-left: 10px;
+  }
+
+  i {
+    margin: 0 0.5em;
+    font-size: 1.75em;
+  }
+}

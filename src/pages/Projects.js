@@ -8,7 +8,7 @@ function AboutMe() {
   return (
     <Banner>
       <Navbar />
-      <div className="container">
+      <div className="banner-container">
         <LeftPanel>
           Projects
         </LeftPanel>

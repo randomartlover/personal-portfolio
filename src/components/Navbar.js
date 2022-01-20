@@ -9,7 +9,7 @@ function Navbar() {
     <div className='navbar'>
       <p>VOL: I <br /> NEWS AND EVENTS IN <br />THE LIFE OF ALEX</p>
       <div className='navbar-img-container'>
-        <img src={navBarBanner} height="100%" width="auto" alt="well" />
+        <img src={navBarBanner} height="auto" width="100%" alt="well" />
       </div>
       <p>
         {moment().format('Do MMMM, YYYY')}

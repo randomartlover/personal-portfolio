@@ -4,9 +4,11 @@
   position: relative;
   height: 14vw;
   align-items: center;
+  max-height: 220px;
+
 
   .navbar-img-container {
-    height: 18vw;
+    width: 55%;
     margin-top: 20px;
   }
 
@@ -32,3 +34,7 @@
     font-size: 1.25em;
   }
 }
+
+// .navbar, .navbar-img-container {
+//   max-height: 220px;
+// }

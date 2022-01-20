@@ -2,12 +2,13 @@
   background: url("../../images/paper.png"), white;
   border: 2px solid black;
   width: 80%;
+  max-width: 1250px;
   margin: 7% auto;
   padding: 2%;
   background-repeat: no-repeat;
   background-size: cover;
 
-  .container{
+  .banner-container{
     display: grid;
     grid-template-columns: 65% auto 30%;
     grid-column-gap: 2.5%;

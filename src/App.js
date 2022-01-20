@@ -28,12 +28,6 @@ function App() {
             </CSSTransition>
           </TransitionGroup>
         )} />
-            {/* <Router render={({ location }) => (
-            <Switch>
-              <Route exact path="/" component={Homepage} />
-              <Route path="/about" component={AboutMe} />
-            </Switch>
-          )} /> */}
     </div>
   );
 }

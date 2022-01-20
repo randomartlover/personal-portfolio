@@ -6,34 +6,68 @@ import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import televison from '../assets/images/retro-television.png';
 import funnyGif from '../assets/images/IT-gif.gif';
+import mapToDreams from '../assets/images/map-to-dreams.svg';
+import Footer from '../components/Footer';
 
 function HomePage() {
   return (
     <Banner>
       <Navbar />
-      <div className="container">
+      <div className="banner-container">
         <LeftPanel>
-          <div className='television-container'>
-            <div className='img-container'>
-              <img src={funnyGif} alt="gif" />
+          <div className='home-header'>
+            <div className='television-container'>
+              <div className='img-container'>
+                <img src={funnyGif} alt="gif" />
+              </div>
+              <img src={televison} alt="televison" />
             </div>
-            <img src={televison} alt="televison" />
+            <div className='home-headline'>
+              <h2>Technology</h2>
+              <p>A portal to a world of</p>
+              <h3>POSSIBILITIES</h3>
+            </div>
           </div>
-          <h3>PASSIONATE ABOUT PUZZLE</h3>
-          <p>Tristique senectus et netus et malesuada fames ac. Sit amet</p>
-          <h3>PASSIONATE ABOUT PUZZLE</h3>
-          <p>Tristique senectus et netus et malesuada fames ac. Sit amet</p>
-          <h3>PASSIONATE ABOUT PUZZLE</h3>
-          <p>Tristique senectus et netus et malesuada fames ac. Sit amet</p>
+          <div className='container container-flex'>
+            <div>
+              <h3>Passionate about analytical thinking</h3>
+              <p>Did someone say japanese puzzles?!?</p>
+              <h3>Passionate about singing and dancing</h3>
+              <p>Pretty good from feedbacks gotten</p>
+              <h3>Passionate about adventures</h3>
+              <p>So much to see...so little time...</p>
+            </div>
+            <img src={mapToDreams} alt="map" width="40%"/>
+          </div>
         </LeftPanel>
         <div className='rule-vertical'></div>
         <RightPanel>
+          <div className="bookmark-ribbon">
+            <h2>EXHIBITIONS</h2>
+          </div>
+          <p>Explore works done by Alexandra Okoro. Do you want to be the best game party host? Have life stories you want to keep track of and maybe share with the world? These and more adventures await.</p>
+          <div className="bookmark-ribbon">
+            <h2>VACANCIES</h2>
+          </div>
+          <p>Grab these amazing oppurtunities while you still can. Candidate open to learning new tech stacks.</p>
+          <br/>
+          <p><strong>Preferred locations:</strong> Switzerland, Germany, Ireland, United Kingdom. Open to other locations.</p>
+          <h3>BACKEND DEVELOPER</h3>
+          <p>Experience with Ruby on Rails, NodeJS. Love for database design.</p>
+          <h3>FRONTEND DEVELOPER</h3>
+          <p>Over 2 years working with React, state management tools such as Redux, CSS. </p>
+          <h3>FULLSTACK DEVELOPER</h3>
+          <p>Experience with end-to-end application development. Interested in learning more about DevOps.</p>
+          <div className="bookmark-ribbon">
+            <h2>CREDITS</h2>
+          </div>
           <Avatar />
-          <p>
-            Tristique senectus et netus et malesuada fames ac. Sit amet porttitor eget dolor morbi non arcu. Feugiat vivamus at augue eget arcu dictum varius duis. Posuere lorem ipsum dolor sit. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Nibh venenatis cras sed felis eget. Magna fermentum iaculis eu non diam phasellus. Leo urna molestie at elementum. Quam pellentesque nec nam aliquam sem et tortor consequat id. Amet nisl purus in mollis nunc sed id. Diam quam nulla porttitor massa id. Tincidunt id aliquet risus feugiat in ante metus dictum at. Pretium quam vulputate dignissim suspendisse in est ante in. Sit amet porttitor eget dolor morbi non arcu risus quis. Non enim praesent elementum facilisis leo vel fringilla. Consectetur adipiscing elit ut aliquam purus sit amet. Augue lacus viverra vitae congue eu consequat. Eget mauris pharetra et ultrices neque.
-          </p>
+          <p className='credit'>DESIGNED BY ALEXANDRA</p>
+          <p className='credit'>Email: <a href="mailto:alex.nnenna.okoro@gmail.com">alex.nnenna.okoro@gmail.com</a> </p>
+          <p className='credit'>Phone number: <a href="tel:+44758-518-7051">+44 - 758 - 518 - 7051</a></p>
         </RightPanel>
       </div>
+      <Footer />
     </Banner>
   );
 }
