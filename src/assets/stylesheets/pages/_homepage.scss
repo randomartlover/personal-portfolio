@@ -7,7 +7,6 @@
   }
 
   h2 {
-    font-family: $playfair-font;
     margin: 0;
     letter-spacing: 0.15em;
   }
@@ -24,6 +23,11 @@
   }
 }
 
+h2 {
+  font-family: $playfair-font;
+  margin: 0;
+}
+
 .container-flex {
   margin-top: 2em;
   h3 {
@@ -36,6 +40,13 @@
   div {
     margin-right: 5%;
   }
+}
+
+.container h2 {
+  border-bottom: 1px dashed gray;
+  width: fit-content;
+  margin: 1.75em 0 0 0;
+  font-size: 1.5em;
 }
 
 .television-container {

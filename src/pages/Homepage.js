@@ -7,7 +7,9 @@ import Banner from '../components/Banner';
 import televison from '../assets/images/retro-television.png';
 import funnyGif from '../assets/images/IT-gif.gif';
 import mapToDreams from '../assets/images/map-to-dreams.svg';
+import gameOnCover from '../assets/images/projects/gameOn/game-on-cover.png';
 import Footer from '../components/Footer';
+import FullWidthImage from '../components/FullWidthImage';
 
 function HomePage() {
   return (
@@ -38,6 +40,12 @@ function HomePage() {
               <p>So much to see...so little time...</p>
             </div>
             <img src={mapToDreams} alt="map" width="40%"/>
+          </div>
+          <div className="container">
+            <h2>WHAT TO EXPECT</h2>
+            <p>Find out what drives Alexandra. Her journey so far and her plans. Also get to know about her personal life, what she does for fun.</p>
+            <p>Included are some of her works so far. Such as <a target="_blank" rel="noopener noreferrer" href="http://www.gameonhost.co.uk/">GameOn!</a> The ideal application that handles game party hosting so you can focus on having fun with your friends.</p>
+            <FullWidthImage source={gameOnCover}/>
           </div>
         </LeftPanel>
         <div className='rule-vertical'></div>
