@@ -13,11 +13,15 @@ function Navbar() {
       </div>
       <p>
         {moment().format('Do MMMM, YYYY')}
-        <em>
-          Page: &nbsp;
-            <Link to="/">Home </Link>
-            <Link to="/about">About-Me </Link>
-            <Link to="/projects">Projects</Link>
+        <em className='navigation'>
+          <div>
+            Page: &nbsp;
+          </div>
+          <div className='links'>
+            <p><Link to="/">Home </Link></p>
+            <p><Link to="/about">About-Me </Link></p>
+            <p><Link to="/projects">Projects</Link></p>
+          </div>
         </em>
       </p>
     </div>

@@ -7,6 +7,7 @@ import Banner from '../components/Banner';
 import televison from '../assets/images/retro-television.png';
 import funnyGif from '../assets/images/IT-gif.gif';
 import gameOnCover from '../assets/images/projects/gameOn/game-on-cover.png';
+import mapToDreams from '../assets/images/map-to-dreams.jpg';
 import Footer from '../components/Footer';
 import FullWidthImage from '../components/FullWidthImage';
 
@@ -14,7 +15,7 @@ function HomePage() {
   return (
     <Banner>
       <Navbar />
-      <div className="banner-container">
+      <div className="banner-container home">
         <LeftPanel>
           <div className='home-header'>
             <div className='television-container'>
@@ -38,6 +39,7 @@ function HomePage() {
               <h3>Passionate about adventures</h3>
               <p>So much to see...so little time...</p>
             </div>
+            <img src={mapToDreams} alt="televison" />
           </div>
           <div className="container">
             <h2 className='underline-fit'>WHAT TO EXPECT</h2>
@@ -70,7 +72,6 @@ function HomePage() {
           <Avatar />
           <p className='credit'>DESIGNED BY ALEXANDRA</p>
           <p className='credit'>Email: <a href="mailto:alex.nnenna.okoro@gmail.com">alex.nnenna.okoro@gmail.com</a> </p>
-          <p className='credit'>Phone number: <a href="tel:+44758-518-7051">+44 - 758 - 518 - 7051</a></p>
         </RightPanel>
       </div>
       <Footer />

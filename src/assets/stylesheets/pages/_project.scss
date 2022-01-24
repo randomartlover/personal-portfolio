@@ -1,0 +1,28 @@
+.project-caption {
+  margin-top: 0.5em;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.project {
+  .half-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    gap: 1em;
+  }
+  .half-grid div {
+    background-color: $light-red-pink;
+  }
+
+  ul {
+    padding-left: 2em;
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5em;
+  grid-gap: 0.5em;
+}

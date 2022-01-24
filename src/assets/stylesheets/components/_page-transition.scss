@@ -26,40 +26,40 @@ $page-fold-top: -0.3em;
 
 //after timeout
 .page-transition-enter-done::before {
-  content: "";
+  // content: "";
   position: absolute;
-  background: linear-gradient(to bottom left, $page-fold-background 0%, $page-fold-background 50%, $page-fold-back 50%, $page-fold-back 100%);
+  // background: linear-gradient(to bottom left, $page-fold-background 0%, $page-fold-background 50%, $page-fold-back 50%, $page-fold-back 100%);
   right: $page-fold-right;
   top: $page-fold-top;
   z-index: 100;
   width: $page-fold-width;
   height: $page-fold-height;
-  box-shadow: -2px 3px 4px 0px #b29090;
+  // box-shadow: -2px 3px 4px 0px #b29090;
 
 }
 
 .page-transition-enter.page-transition-enter-active::before {
-  content: "";
+  // content: "";
   position: absolute;
-  background: linear-gradient(to bottom left, $page-fold-background 0%, $page-fold-background 50%, $page-fold-back 50%, $page-fold-back 100%);
+  // background: linear-gradient(to bottom left, $page-fold-background 0%, $page-fold-background 50%, $page-fold-back 50%, $page-fold-back 100%);
   right: $page-fold-right;
   top: $page-fold-top;
   z-index: 10;
   width: $page-fold-width;
   height: $page-fold-height;
-  box-shadow: -2px 3px 4px 0px #b29090;
+  // box-shadow: -2px 3px 4px 0px #b29090;
 }
 
 //on app load
 .page-transition-appear-active::before {
-  content: "";
+  // content: "";
   position: absolute;
-  background: linear-gradient(to bottom left, $page-fold-background 0%, $page-fold-background 50%, $page-fold-back 50%, $page-fold-back 100%);
+  // background: linear-gradient(to bottom left, $page-fold-background 0%, $page-fold-background 50%, $page-fold-back 50%, $page-fold-back 100%);
   right: $page-fold-right;
   top: $page-fold-top;
   z-index: 100;
   width: $page-fold-width;
   height: $page-fold-height;
-  box-shadow: -2px 3px 4px 0px #b29090;
+  // box-shadow: -2px 3px 4px 0px #b29090;
 
 }

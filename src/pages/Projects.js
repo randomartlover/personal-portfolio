@@ -12,6 +12,7 @@ import petHub from '../assets/images/projects/petHub/petHub-cover.png'
 const PROJECTS = [
   {
     projectName: "GameOn!",
+    url: "gameon",
     description: "Game On is a party organiser. It takes away the pain of planning a party so you can focus on being a great host. Choose the date, time and place of your party. Select your guests. Have pre-party chat. Included in app is a game selection feature. Let your guests know ahead of time the games to expect with voting feature to know which games are crowd favorites.",
     source: gameOn,
     tools: [
@@ -23,6 +24,7 @@ const PROJECTS = [
   },
   {
     projectName: "PetHub",
+    url: "pethub",
     description: "PetHub connects pet lovers to pet owners. Want to have a pet for a day or more? PetHub gives you this option. Famous pets available for play dates on our application. Want to know what it's like to hang out with royalty for a day? Book your next play date with the Royal corgis.",
     source: petHub,
     tools: [
@@ -34,7 +36,8 @@ const PROJECTS = [
   },
   {
     projectName: "StoryBooks",
-    description: "Create public and private stories from your life.It is a node.js application using google authentication, with all CRUD actions implemented. StoryBooks helps keep track of your life stories with features to make stories public or private.",
+    url: "storybooks",
+    description: "Create public and private stories from your life. It is a node.js application using google authentication, with all CRUD actions implemented. StoryBooks helps keep track of your life stories with features to make stories public or private.",
     source: storybook,
     tools: [
       "Node.js",
@@ -60,7 +63,7 @@ function Projects() {
           </div>
           {
             PROJECTS.map((project, index) => {
-              const { projectName, description, source } = project;
+              const { projectName, description, source, url } = project;
               return (
                       <Card
                         reverse={index%2 ? true : false}
@@ -69,7 +72,7 @@ function Projects() {
                         <img src={source} alt={`${projectName}-cover`} />
                         <div>
                           <h3>
-                            <Link to={`projects/${projectName}`}>
+                            <Link to={`projects/${url}`}>
                               {projectName}
                             </Link>
                           </h3>

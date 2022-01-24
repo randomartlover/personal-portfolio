@@ -6,6 +6,16 @@
   align-items: center;
   max-height: 220px;
 
+  .navigation {
+    display: flex;
+    align-items: baseline;
+
+    .links p {
+      font-size: 0.75em;
+      margin: 0;
+      margin-bottom: 0.25em;
+    }
+  }
 
   .navbar-img-container {
     width: 55%;
