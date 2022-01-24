@@ -18,9 +18,9 @@ function Navbar() {
             Page: &nbsp;
           </div>
           <div className='links'>
-            <p><Link to="/">Home </Link></p>
-            <p><Link to="/about">About-Me </Link></p>
-            <p><Link to="/projects">Projects</Link></p>
+            <p><Link to="/"><i class="fas fa-igloo"/> Home </Link></p>
+            <p><Link to="/about"><i class="fas fa-user-astronaut"/> About-Me </Link></p>
+            <p><Link to="/projects"><i class="fas fa-puzzle-piece"/>Projects</Link></p>
           </div>
         </em>
       </p>

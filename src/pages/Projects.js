@@ -23,18 +23,6 @@ const PROJECTS = [
     ]
   },
   {
-    projectName: "PetHub",
-    url: "pethub",
-    description: "PetHub connects pet lovers to pet owners. Want to have a pet for a day or more? PetHub gives you this option. Famous pets available for play dates on our application. Want to know what it's like to hang out with royalty for a day? Book your next play date with the Royal corgis.",
-    source: petHub,
-    tools: [
-      "Ruby on Rails",
-      "PostgreSQL",
-      "Embedded RuBy",
-      "Heroku"
-    ]
-  },
-  {
     projectName: "StoryBooks",
     url: "storybooks",
     description: "Create public and private stories from your life. It is a node.js application using google authentication, with all CRUD actions implemented. StoryBooks helps keep track of your life stories with features to make stories public or private.",
@@ -44,6 +32,18 @@ const PROJECTS = [
       "Express",
       "MongoDB",
       "Express-handlebar",
+      "Heroku"
+    ]
+  },
+  {
+    projectName: "PetHub",
+    url: "pethub",
+    description: "PetHub connects pet lovers to pet owners. Want to have a pet for a day or more? PetHub gives you this option. Famous pets available for play dates on our application. Want to know what it's like to hang out with royalty for a day? Book your next play date with the Royal corgis.",
+    source: petHub,
+    tools: [
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Embedded RuBy",
       "Heroku"
     ]
   },

@@ -20,9 +20,20 @@
   }
 }
 
-.image-grid {
+.image-grid-1, .image-grid-2, .image-grid-3 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5em;
   grid-gap: 0.5em;
+}
+
+.image-grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.image-grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.image-grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
 }

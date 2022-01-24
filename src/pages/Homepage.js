@@ -39,7 +39,7 @@ function HomePage() {
               <h3>Passionate about adventures</h3>
               <p>So much to see...so little time...</p>
             </div>
-            <img src={mapToDreams} alt="televison" />
+            <img src={mapToDreams} alt="televison" width="40%"/>
           </div>
           <div className="container">
             <h2 className='underline-fit'>WHAT TO EXPECT</h2>

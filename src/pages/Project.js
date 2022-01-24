@@ -8,7 +8,7 @@ import FullWidthImage from '../components/FullWidthImage';
 
 function Project(props) {
   console.log(props)
-  const { title, caption, imgUrl, description, tools, links, imgUrls } = props;
+  const { title, caption, imgUrl, description, tools, links, imgUrls, favoriteAspects, challenges, gridNumber = 2 } = props;
   return (
     <Banner>
       <Navbar />
@@ -20,19 +20,25 @@ function Project(props) {
             <p className='project-caption'><em>{caption}</em></p>
             <h3 className='underline-full'>Description</h3>
             <p>{description}</p>
-            <div className='half-grid'>
+            <div className={`half-grid`}>
               <div className='container'>
                 <h3 className='underline-full'>Favourite Parts</h3>
                 <ul>
-                  <li>This</li>
-                  <li>That</li>
+                  {
+                    favoriteAspects.map((favAspect, index) => {
+                      return <li key={`fav-${index}`}>{favAspect}</li>
+                    })
+                  }
                 </ul>
               </div>
               <div className='container'>
                 <h3 className='underline-full'>Challenges</h3>
                 <ul>
-                  <li>Not This</li>
-                  <li>Not That</li>
+                  {
+                    challenges.map((challenge, index) => {
+                      return <li key={`challenge-${index}`}>{challenge}</li>
+                    })
+                  }
                 </ul>
               </div>
 
@@ -49,23 +55,28 @@ function Project(props) {
           <div className="bookmark-ribbon">
             <h2>Tech Stack</h2>
           </div>
-          <ul>
+          <ul className='skills-grid'>
             {
               tools.map(tool => {
                 return <li key={tool}>{tool}</li>
               })
             }
           </ul>
-          <div className="bookmark-ribbon">
-            <h2>Photos</h2>
-          </div>
-            <div className='image-grid'>
-              {
-                imgUrls.map(img => {
-                  return <img src={img} alt="" width="100%"/>
-                })
-              }
-          </div>
+          {
+            imgUrls &&
+            <>
+              <div className="bookmark-ribbon">
+                <h2>Photos</h2>
+              </div>
+                <div className={`image-grid-${gridNumber}`}>
+                  {
+                    imgUrls.map(img => {
+                      return <img src={img} alt="" width="100%"/>
+                    })
+                  }
+              </div>
+            </>
+          }
           </RightPanel>
       </div>
       <Footer />
