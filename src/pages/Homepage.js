@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import LeftPanel from '../components/LeftPanel';
 import RightPanel from '../components/RightPanel';
 import Avatar from '../components/Avatar';
@@ -44,7 +45,7 @@ function HomePage() {
           <div className="container">
             <h2 className='underline-fit'>WHAT TO EXPECT</h2>
             <p>Find out what drives Alexandra. Her journey so far and her plans. Also get to know about her personal life, what she does for fun.</p>
-            <p>Included are some of her works so far. Such as <a target="_blank" rel="noopener noreferrer" href="http://www.gameonhost.co.uk/">GameOn!</a> The ideal application that handles game party hosting so you can focus on having fun with your friends.</p>
+            <p>Included are some of her works so far. Such as <Link to="/projects/gameon">GameOn!</Link> The ideal application that handles game party hosting so you can focus on having fun with your friends.</p>
             <FullWidthImage source={gameOnCover}/>
           </div>
         </LeftPanel>

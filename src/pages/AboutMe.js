@@ -4,6 +4,10 @@ import RightPanel from '../components/RightPanel';
 import Navbar from '../components/Navbar';
 import Banner from '../components/Banner';
 import Footer from '../components/Footer';
+import AOT from '../assets/images/hobbies/AOT.jpg';
+import birdy from '../assets/images/hobbies/birdy.jpeg';
+import dailyLightUp from '../assets/images/hobbies/daily-light-up.png';
+import Card from '../components/Card';
 
 const EXPERIENCES = [
                       {
@@ -75,6 +79,29 @@ const SKILLS = [
                 "Stimulus",
               ]
 
+const HOBBIES = [
+                  {
+                    source: AOT,
+                    alt: "Attack on Titan",
+                    url: "https://www.instagram.com/p/BZBrVILB6YQ/",
+                    title: "Drawing and animation",
+                    description: "A fan of anime, my favourite is Attack on Titan. I love drawing so here is my rendition of Eren Jaeger (left) in his titan form."
+                  },
+                  {
+                    source: dailyLightUp,
+                    alt: "Daily Light Up",
+                    url: "https://www.brainbashers.com/showlightup.asp?date=0124&diff=Hard&size=20",
+                    title: "Puzzles",
+                    description: "Introduced to me by my mum, Brainbashers is my goto puzzle source with daily light up puzzle being my fave."
+                  },
+                  {
+                    source: birdy,
+                    alt: "Birdy",
+                    url: "https://open.spotify.com/artist/2WX2uTcsvV5OnS0inACecP",
+                    title: "Music and dance",
+                    description: "My all time favourite musician is Birdy, she is such a talented composer. I really enjoy singing her songs. A close second would be Lana Del Rey. Of course the perfect pair to the love of music is the love of dancing."
+                  },
+                ]
 function AboutMe() {
   return (
       <Banner>
@@ -93,11 +120,31 @@ function AboutMe() {
                 I additionally get to partake in a hobby of mine, puzzle solving. Each new application is a puzzle to find the most efficient and user-friendly approach. I am a Full Stack Web Developer.
               </p>
               <h3 className='underline-full'>Career goals</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p>Writing clean, well tested and typescripted programs. I also want to confidently work with large data not at the expense of performance. After this, I would want to focus more on backend development and DevOps.</p>
+              <p>I would eventually want to take on more leadership-oriented roles.</p>
               <h3 className='underline-full'>Personal goals</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+              <p>I had the oppurtunity to learn from others, I owe a lot to the open tech community and my friends. I would love to give back by being a mentor to someone and watching them grow.</p>
+              <p>There is a saying <em><strong>Charity begins at home.</strong></em> With most of my life spent in Nigeria, I know firsthand that although it is a beautiful country with rich culture and ripe with potential, it is relatively untapped and most times, the citizens do not benefit from advancements as much as they should. It has led to many gifted individuals lacking the exposure to be groomed to their full potential. I would love to create a platform that puts such individuals in a better position to access oppurtunities.</p>
               <h3 className='underline-full'>Hobbies</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            {
+              HOBBIES.map((hobby, index) => {
+                const { source, alt, url, title, description } = hobby
+                return (
+                  <Card
+                    reverse={index % 2 ? true : false}
+                    key={alt}
+                  >
+                    <img src={source} alt={alt} />
+                    <div>
+                      <h3>
+                        <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
+                      </h3>
+                      <p>{description}</p>
+                    </div>
+                  </Card>
+                )
+              })
+            }
             </div>
           </LeftPanel>
           <div className='rule-vertical'></div>
