@@ -123,7 +123,7 @@ function AboutMe() {
               <p>Writing clean, well tested and typescripted programs. I also want to confidently work with large data not at the expense of performance. After this, I would want to focus more on backend development and DevOps.</p>
               <p>I would eventually want to take on more leadership-oriented roles.</p>
               <h3 className='underline-full'>Personal goals</h3>
-              <p>I had the oppurtunity to learn from others, I owe a lot to the open tech community and my friends. I would love to give back by being a mentor to someone and watching them grow.</p>
+              <p>I had the opportunity to learn from others, I owe a lot to the open tech community and my friends. I would love to give back by being a mentor to someone and watching them grow.</p>
               <p>There is a saying <em><strong>Charity begins at home.</strong></em> With most of my life spent in Nigeria, I know firsthand that although it is a beautiful country with rich culture and ripe with potential, it is relatively untapped and most times, the citizens do not benefit from advancements as much as they should. It has led to many gifted individuals lacking the exposure to be groomed to their full potential. I would love to create a platform that puts such individuals in a better position to access oppurtunities.</p>
               <h3 className='underline-full'>Hobbies</h3>
             {

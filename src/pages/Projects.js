@@ -2,6 +2,7 @@ import React from 'react';
 import LeftPanel from '../components/LeftPanel';
 import RightPanel from '../components/RightPanel';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom';
 import Card from '../components/Card';
@@ -106,6 +107,7 @@ function Projects() {
             }
         </RightPanel>
       </div>
+      <Footer />
     </Banner>
   );
 }

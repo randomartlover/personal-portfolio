@@ -17,8 +17,8 @@ function Navbar() {
           Page: &nbsp;
           <div className='links'>
             <p><Link to="/"><i className="fas fa-igloo"/> Home </Link></p>
-            <p><Link to="/about"><i className="fas fa-user-astronaut"/> About-Me </Link></p>
             <p><Link to="/projects"><i className="fas fa-puzzle-piece"/>Projects</Link></p>
+            <p><Link to="/about"><i className="fas fa-user-astronaut"/> About-Me </Link></p>
           </div>
         </em>
       </div>
